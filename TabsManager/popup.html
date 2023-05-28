@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js" defer></script>
+
+    <title>TabCloser</title>
+</head>
+
+<body>
+    <div id="root_ext">
+        <div id="badge" class="badge"></div> <!-- Added badge element -->
+        <h2>Tabs Management</h2>
+        <br>
+        <br>
+        <div id="page1" class="page active">
+            <!-- Content for page 1 -->
+            <button id="goToPage2">Go to Page 2</button>
+            <ol id="ext_tabs">
+            </ol>
+        </div>
+
+        <div id="page2" class="page" style="display: none;">
+            <!-- Content for page 2 -->
+            <button id="goToPage1">Go to Page 1</button>
+            <p>This is Page 2</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

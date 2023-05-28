@@ -1,0 +1,27 @@
+{
+  "name": "TubCloser",
+  "version": "1.0.0",
+  "description": "This extension allows you to manage your tabs",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": [
+            "index.js", 
+            "popup.js"
+        ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+     "css": ["style.css"]
+  }
+  
+}
