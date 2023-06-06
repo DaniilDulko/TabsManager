@@ -7,7 +7,7 @@ body {
 
 #root_ext {
     width: 400px;
-    /* Adjust the width as per your preference */
+
 }
 
 h2 {
@@ -47,7 +47,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-    /* Added to fix table layout */
+ 
 }
 
 th,
@@ -56,11 +56,9 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
-    /* Added to prevent link overflow */
     overflow: hidden;
-    /* Added to prevent link overflow */
     text-overflow: ellipsis;
-    /* Added to truncate long links */
+
 }
 
 th {
@@ -95,13 +93,12 @@ a:hover {
     align-items: center;
 }
 
-/* Add lines to table cells */
+
 th,
 td {
     border-bottom: 1px solid #ddd;
 }
 
-/* Remove bottom border from the last row */
 tr:last-child {
     border-bottom: none;
 }
